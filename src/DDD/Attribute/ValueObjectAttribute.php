@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 
-namespace PhpMolecules\Attribute;
+namespace PHPMolecules\DDD\Attribute;
 
 use Attribute;
 
