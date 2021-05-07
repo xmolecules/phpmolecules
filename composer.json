@@ -1,13 +1,14 @@
 {
   "name": "xmolexules/phpmolecules",
+  "type": "library",
   "description": "Libraries to help developers express architectural abstractions in PHP code",
-  "minimum-stability": "stable",
   "homepage": "https://xmolecules.org/",
   "license": "Apache",
   "authors": [
     {
       "name": "Henning Schwentner",
-      "email": "hs@wps.de"
+      "email": "hs@wps.de",
+      "homepage": "http://hschwentner.io"
     }
   ],
   "autoload-dev": {
