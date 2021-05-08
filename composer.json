@@ -13,12 +13,12 @@
   ],
   "autoload-dev": {
     "psr-4": {
-      "": "tests/"
+      "PHPMolecules\\DDD\\": "tests/DDD"
     }
   },
   "autoload": {
     "psr-4": {
-      "": "src/"
+      "PHPMolecules\\DDD\\": "src/DDD"
     }
   },
   "require": {
