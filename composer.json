@@ -3,7 +3,7 @@
   "type": "library",
   "description": "Libraries to help developers express architectural abstractions in PHP code",
   "homepage": "https://xmolecules.org/",
-  "license": "Apache",
+  "license": "Apache-2.0",
   "authors": [
     {
       "name": "Henning Schwentner",
