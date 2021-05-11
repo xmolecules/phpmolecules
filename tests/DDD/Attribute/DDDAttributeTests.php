@@ -6,6 +6,18 @@ namespace PHPMolecules\DDD\Attribute;
 
 use PHPUnit\Framework\TestCase;
 
+// phpcs:disable PSR1.Classes.ClassDeclaration.MultipleClasses
+#[ValueObject]
+class IBAN
+{
+}
+
+#[Entity]
+class BankAccount
+{
+    private IBAN $iban;
+}
+
 class DDDAttributesTest extends TestCase
 {
     public function testAttributes(): void
@@ -15,3 +27,4 @@ class DDDAttributesTest extends TestCase
         $this->assertTrue(true);
     }
 }
+// phpcs:enable
