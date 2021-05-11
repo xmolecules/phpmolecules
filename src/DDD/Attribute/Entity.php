@@ -7,6 +7,6 @@ namespace PHPMolecules\DDD\Attribute;
 use Attribute;
 
 #[Attribute]
-class ValueObjectAttribute
+class Entity
 {
 }

@@ -1,0 +1,7 @@
+parameters:
+    level: max
+    fileExtensions:
+        - php
+    paths:
+        - src/DDD
+        - tests/DDD
