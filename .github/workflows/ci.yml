@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: composer update --no-interaction --no-ansi --no-progress
 
-    - name: Run PHPStan
+    - name: Run static analysis
       run: ./vendor/bin/phpstan analyze
 
     - name: Test
