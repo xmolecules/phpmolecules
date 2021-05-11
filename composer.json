@@ -11,6 +11,14 @@
       "homepage": "http://hschwentner.io"
     }
   ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "phpstan/phpstan": "^0.12.86",
+    "squizlabs/php_codesniffer": "^3.6"
+  },
   "autoload": {
     "psr-4": {
       "PHPMolecules\\DDD\\": "src/DDD"
@@ -20,13 +28,5 @@
     "psr-4": {
       "PHPMolecules\\DDD\\": "tests/DDD"
     }
-  },
-  "require": {
-    "php": ">=8.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^9.5",
-    "phpstan/phpstan": "^0.12.86",
-    "squizlabs/php_codesniffer": "^3.6"
   }
 }
