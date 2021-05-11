@@ -11,14 +11,14 @@
       "homepage": "http://hschwentner.io"
     }
   ],
-  "autoload-dev": {
-    "psr-4": {
-      "PHPMolecules\\DDD\\": "tests/DDD"
-    }
-  },
   "autoload": {
     "psr-4": {
       "PHPMolecules\\DDD\\": "src/DDD"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PHPMolecules\\DDD\\": "tests/DDD"
     }
   },
   "require": {
