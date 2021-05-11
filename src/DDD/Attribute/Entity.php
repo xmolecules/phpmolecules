@@ -17,7 +17,8 @@ use Attribute;
  * @author Stephan Pirnbaum
  * @author Martin Schimak
  * @author Oliver Drotbohm
- * @link https://domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf Domain-Driven Design Reference (Evans) - Entities
+ * @link https://domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf Domain-Driven Design Reference
+ *     (Evans) - Entities
  */
 #[Attribute(Attribute::TARGET_CLASS)]
 class Entity
