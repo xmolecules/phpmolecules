@@ -41,14 +41,17 @@ TODO: port documentation from jMolecules.
 
 ## Installation
 
-To use phpMolecules in your project just install it with Composer from Packagist.
+To use phpMolecules in your project just install it with Composer from Packagist:
 
-TODO:
+```fish
+composer require xmolecules/phpmolecules
+```
 
 ## Release Instructions
 
-TODO:
+Create a new Git version tag and push it:
 
-Manual steps:
-
-* 
+```fish
+git tag --annotate vX.Y.Z
+git push --tags
+```
