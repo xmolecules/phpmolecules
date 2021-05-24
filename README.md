@@ -13,7 +13,7 @@ Goals:
 Example:
 
 ```php
-use PHPMolecules\DDD\Attribute;
+use PHPMolecules\DDD\Attribute\{Entity, ValueObject, Repository};
 
 #[Entity]
 class BankAccount { /* ... */ }
@@ -31,7 +31,7 @@ So in a banking domain we don't want `BankAccountEntity`, `CurrencyVO` or even `
 Instead, we want `BankAccount`, `Currency` and `Accounts` – like in the example above.
 
 Still, we want to express that a given class (or other architectural element) is a special building block; i.e. uses a design pattern.
-nMolecules provide a set of standard annotations for the building blocks known from DDD.
+PHPMolecules provide a set of standard annotations for the building blocks known from DDD.
 
 ## Expressing Architecture
 
@@ -52,6 +52,6 @@ composer require xmolecules/phpmolecules
 Create a new Git version tag and push it:
 
 ```fish
-git tag --annotate vX.Y.Z
+git tag --sign vX.Y.Z
 git push --tags
 ```
