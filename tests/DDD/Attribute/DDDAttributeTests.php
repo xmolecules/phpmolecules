@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace PHPMolecules\DDD\Attribute;
 
+use ReflectionClass;
 use PHPUnit\Framework\TestCase;
 
 // phpcs:disable PSR1.Classes.ClassDeclaration.MultipleClasses
@@ -20,11 +21,20 @@ class BankAccount
 
 class DDDAttributesTest extends TestCase
 {
-    public function testAttributes(): void
+    public function testValueObjectAttribute(): void
     {
-        // Not really a unit test, more a syntax test...
-        $account = new BankAccount();
-        $this->assertTrue(true);
+        $reflector = new ReflectionClass(IBAN::class);
+        $attributes = $reflector->getAttributes();
+        $this->assertCount(1, $attributes);
+        $this->assertEquals("PHPMolecules\DDD\Attribute\ValueObject", $attributes[0]->getName());
+    }
+
+    public function testEntityAttributes(): void
+    {
+        $reflector = new ReflectionClass(BankAccount::class);
+        $attributes = $reflector->getAttributes();
+        $this->assertCount(1, $attributes);
+        $this->assertEquals("PHPMolecules\DDD\Attribute\Entity", $attributes[0]->getName());
     }
 }
 // phpcs:enable
