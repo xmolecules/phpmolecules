@@ -16,7 +16,8 @@ class IBAN
 #[Entity]
 class BankAccount
 {
-    private IBAN $iban;
+    #[Identity]
+    private IBAN $iban; /* @phpstan-ignore-line */
 }
 
 class DDDAttributesTest extends TestCase
