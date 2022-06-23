@@ -5,6 +5,10 @@ on: [ push,  pull_request ]
 jobs:
   build:
 
+    strategy:
+      matrix:
+        php-version: ['8.0', '8.1']
+
     runs-on: ubuntu-latest
 
     steps:
@@ -14,7 +18,7 @@ jobs:
     - name: Setup PHP with tools
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.0'
+        php-version: ${{ matrix.php-version }}
         tools: composer:v2
 
     - name: Install dependencies
