@@ -9,11 +9,11 @@ jobs:
       matrix:
         php-version: ['8.0', '8.1']
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout source code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Setup PHP with tools
       uses: shivammathur/setup-php@v2
