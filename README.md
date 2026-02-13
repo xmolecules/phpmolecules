@@ -53,11 +53,13 @@ This project includes several Composer scripts to assist with development, testi
 
 - `unit`: Runs PHPUnit tests with colored output.
 - `stan`: Performs static analysis using PHPStan.
-- `cs-check`: Checks code style compliance using PHP CodeSniffer.
+- `cs-check`: Checks code style compliance using PHP CodeSniffer, including version display and caching for performance.
 - `cs-fix`: Automatically fixes code style issues using PHP CodeSniffer.
 - `composer-audit`: Runs Composer audit to check for security vulnerabilities in dependencies.
-- `fix`: Alias for `cs-fix` to fix code style issues.
-- `test`: Runs a comprehensive test suite including unit tests, code style checks, static analysis, and security audit.
+- `rector`: Runs Rector in dry-run mode to check for potential code improvements.
+- `rector-fix`: Runs Rector to apply code improvements.
+- `fix`: Runs both code style fixes and Rector improvements.
+- `test`: Runs a comprehensive test suite including unit tests, code style checks, static analysis, Rector checks, and security audit.
 
 Example usage:
 
