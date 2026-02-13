@@ -28,5 +28,21 @@
     "psr-4": {
       "PHPMolecules\\DDD\\": "tests/DDD"
     }
+  },
+  "scripts": {
+    "unit": "phpunit --colors=always",
+    "stan": "phpstan analyse",
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "composer-audit": "composer audit",
+    "fix": [
+      "@cs-fix"
+    ],
+    "test": [
+      "@unit",
+      "@cs-check",
+      "@stan",
+      "@composer-audit"
+    ]
   }
 }
