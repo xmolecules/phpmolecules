@@ -47,6 +47,25 @@ To use phpMolecules in your project just install it with Composer from Packagist
 composer require xmolecules/phpmolecules
 ```
 
+## Development Scripts
+
+This project includes several Composer scripts to assist with development, testing, and code quality checks. You can run these scripts using `composer run <script-name>`.
+
+- `unit`: Runs PHPUnit tests with colored output.
+- `stan`: Performs static analysis using PHPStan.
+- `cs-check`: Checks code style compliance using PHP CodeSniffer.
+- `cs-fix`: Automatically fixes code style issues using PHP CodeSniffer.
+- `composer-audit`: Runs Composer audit to check for security vulnerabilities in dependencies.
+- `fix`: Alias for `cs-fix` to fix code style issues.
+- `test`: Runs a comprehensive test suite including unit tests, code style checks, static analysis, and security audit.
+
+Example usage:
+
+```fish
+composer run test
+composer run fix
+```
+
 ## Release Instructions
 
 Create a new Git version tag and push it:
