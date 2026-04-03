@@ -1,0 +1,28 @@
+{
+  "name": "LeasingNinja PHP",
+  "image": "mcr.microsoft.com/devcontainers/php:8.5",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/fish-apt-get:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "phpstan.vscode-phpstan",
+        "recca0120.vscode-phpunit"
+      ],
+      "settings": {
+        "php.validate.executablePath": "/usr/local/bin/php",
+        "terminal.integrated.defaultProfile.linux": "fish",
+        "terminal.integrated.profiles.linux": {
+          "fish": {
+            "path": "/usr/bin/fish"
+          }
+        }
+      }
+    }
+  },
+  "postCreateCommand": "composer install",
+  "remoteUser": "vscode"
+}
