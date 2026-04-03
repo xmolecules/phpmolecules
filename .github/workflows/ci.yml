@@ -7,13 +7,13 @@ jobs:
 
     strategy:
       matrix:
-        php-version: ['8.0', '8.1', '8.2']
+        php-version: ['8.0', '8.1', '8.2', '8.3', '8.4', '8.5']
 
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
     - name: Checkout source code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
 
     - name: Setup PHP with tools
       uses: shivammathur/setup-php@v2
