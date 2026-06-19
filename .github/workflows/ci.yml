@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Checkout source code
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Setup PHP with tools
       uses: shivammathur/setup-php@v2
